@@ -29,6 +29,9 @@ public class Main {
      * @param args 启动参数
      */
     public static void main(String[] args) {
+        /*
+        1. 初始化日志，将logback配置文件中占位符的值，写入到Java 运行时属性文件中
+         */
         Logs.init();
         Logs.Console.info("launch mpush server...");
         ServerLauncher launcher = new ServerLauncher();
