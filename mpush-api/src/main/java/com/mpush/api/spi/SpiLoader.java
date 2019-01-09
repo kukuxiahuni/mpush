@@ -22,6 +22,9 @@ package com.mpush.api.spi;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 注意Java中的spi
+ */
 public final class SpiLoader {
     private static final Map<String, Object> CACHE = new ConcurrentHashMap<>();
 
